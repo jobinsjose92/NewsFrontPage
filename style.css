@@ -1,0 +1,164 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+
+.subheader{
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.subheader img{
+    width: 50px;
+    height: 70px;
+    margin: 0px 30px;
+    cursor: pointer;
+}
+
+.subheader h1{
+    margin: auto 0;
+   cursor: pointer;
+}
+
+.social-icons
+{
+    text-align: right;
+    flex-grow:1;
+}
+
+.social-icons i{
+    margin: 15px 7px;
+    cursor: pointer;
+}
+
+.navbar{
+    overflow:hidden;
+}
+
+.navbar a {
+    
+    margin: 0 20px;
+    padding: 20px;
+    color:rgb(14, 13, 13);
+    text-align: center;
+
+text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: grey;
+    text-decoration: none;
+    color:white;
+    transition: ease-in 0.2s;
+}
+
+.navbar a:active{
+text-decoration: underline;
+}
+
+.breaknews{
+    padding: 0 30px 0 60px;
+    display: flex;
+    border: black solid;
+    
+}
+
+.breaknews #breaking{
+    
+    animation: text-flicker 1s linear infinite;
+    color: white;
+    font-weight: bolder;
+    background: red;
+    display: inline-flex;
+    text-align: center;
+    
+}
+
+.breaknews .brknews{
+
+    padding: 10px;
+    color:black;
+    display: inline-flex;
+    
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.breaknews .brktime{
+  font-weight: bolder;
+    padding: 0 14px;
+    display:inline-flex;
+   
+}
+
+#popular {
+    display: flex;
+   margin: 30px 5%;
+}
+#popular img
+{
+width: 100%;
+filter: brightness(0.7);
+   }
+
+   #popular h2{
+       margin: 0;
+       padding: 5px;
+       color: white;
+   }
+#feature h2{
+background-color: rgb(34, 155, 177);
+}
+
+#latest h2{
+    background-color: rgb(34, 155, 177);
+} 
+
+#selected h2{
+    background-color: rgb(34, 155, 177);
+}
+.carousel, .container{
+position: relative;
+}
+
+
+.news-text{
+    font-size: 14px;
+    position: absolute;
+    color: white;
+    z-index: 2;
+    bottom: 5px;
+    font-weight: bolder;
+    padding:0 10px ;
+    transition-duration: 500ms;
+    
+}
+
+#feature{
+    flex: 2;
+}
+
+#latest,#selected{
+    flex: 1;
+}
+
+.container:hover > .news-text{
+    zoom: 120%;
+}
+
+
+@keyframes text-flicker{
+0%{opacity:0;}
+}
+    
+
+
